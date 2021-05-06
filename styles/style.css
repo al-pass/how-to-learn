@@ -10,22 +10,466 @@
 }
 
 .header {
+  margin:0;
+  display:flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color:lightgray;
   /* выше установили ограничения для секции */
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
+
+/*Левую часть шапки сайта будем считать флекс колонкой с растоянием между блоками*/
+.header__left-column{
+align-items:flex-start;
+flex-direction:column;
+justify-content:space-between;
+display:flex;
+/*yes, it wasn't asked to but i like the way it breaks more*/
+z-index:2;
+}
+
+.header__title{
+  width:730px;
+}
+
+.header__title_font-style{
+  font-size:102px;
+  font-weight:bold;
+  line-height: 96px;
+}
+.header__subtitle{
+  width: 388px;
+}
+
+.header__subtitle_font-style{
+  font-size:18px;
+}
+/*DON'T FORGET TO PUT SOME TEXT HERE*/
+.header__right-pictures{
+  margin-left:0;
+  width:100vw;
+  flex-direction: row-reverse;
+}
+.header__main-illustration{
+  /*не уверен почему, но заданная ширина картинки в тз оказалась черезмерно большой для этого блока из-за чего я уменьшил длинну блока, чтобы туда укладывалась только картинка без пустого места в комплекте*/
+  width: 715px;
+  height: 608px;
+  background-image: url(../images/header-image.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.header_main-illustration_positioning{
+  position:absolute;
+  bottom:0;
+  right:0;
+  z-index:1;
+}
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color:blue;
 }
-
+.header__square-pic_positioning{
+  position: absolute;
+  top:64px;
+  right: 0;
+}
+/* insted of margin header left column in blocks, we'll make padding inside left column to make needed space for content inside it*/
+.left-column_paddings{
+  width:50vw;
+  padding: 30px 0 30px 65px;
+}
+.logo{
+width: 183px;
+height: 32px;
+background-image: url(../images/logo_place_header.svg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.subtitle__link_font-style{
+  text-decoration: none;
+}
+/* HEADER BLOCK IS FINISHED. KEEP ON, IT'S NOT A TOO LONG WAY TO GO*/
+/* main block of the description section*/
+.description{
+display:flex;
+margin: 100px auto;
+}
+.two-columns{
+margin:0 auto;
+  width:80vw;
+  display:inherit;
+  justify-content: space-between;
+}
+.two-columns__main-text{
+  width:80%;
+  min-width: 784px;
+}
+.two-columsn__main-text_content-positioning{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.two-columns_brief{
+  width: 175px;
+}
+.main-text_space-after{
+  margin-bottom:30px;
+}
+
+/*now i'll make font changes for description part*/
+.main-text_paragraph_font-style{
+ line-height: 34px;
+ font-size: 24px;
+ font-style: bold;
+}
+
+.two-column__brief{
+  line-height: 1.2;
+  font-size:24px;
+  color: rgb(115, 154, 228);
+}
+
+/*DESCRIPTION PART IN DONE FOR. KEEP GOING, IT'S NOTHING TO LOOK AT*/
+/*the whole section of digits is centered, so let's do it in digits*/
+.digits{
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto 0;
+  align-items: center;
+}
+.section__title{
+  width:60%;
+  text-align: center;
+}
+.section__title_font-style{
+font-size:50px;
+line-height: 1.5;
+font-weight: bold;
+}
+.section__subtitle{
+  width:60%;
+  text-align: center;
+}
+.section__subtitle_font-style{
+line-height: 34px;
+font-size: 24px;
+}
+/*size of a table block is stable, may be fixed thought*/
+.digits__table{
+  margin:0 0 100px;
+  height: 300px;
+  width: 1000px;
+  height: 80vh;
+  height: fit-content;
+}
+.table_flex{
+  display:flex;
+  flex-wrap: wrap;
+}
+.table__cell{
+  width:250px;
+  margin:60px 0 0;  
+  height: fit-content;
+}
+.table__cell_heading{
+list-style-type: none;
+text-align: left;
+}
+.cell__heading_font-style{
+font-weight: bold;
+font-size: 24px;
+line-height: 1.15;
+}
+.table__cell_text{
+  text-align: left;
+  list-style-type: none;
+}
+.cell__text_font-style{
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.cell__space-after{
+  margin-bottom: 20px;
+}
+
+/*DIGEST ARE FINISHED YOU CAN FEEL FREE TO KEEP GOING*/
+
+.content__title{
+  margin: 0 auto;
+  text-align: center; 
+  width:648px;
+  list-style: none;
+  z-index: 1;
+}
+.content__title_font-style{
+font-size:120px;
+line-height: 1.15;
+font-weight: bold;
+}
+.content__subtitle{
+  margin: 70px auto 0;
+  text-align: center;
+  list-style: none;
+  z-index: 1;
+}
+.content__subtitle_font-style{
+  line-height:51px;
+  font-size:36px;
+  font-weight:normal;
+}
+.feynman{
+  position: relative;
+  height: 100vh;
+  margin:0;
+  background-color: rgb(233, 233, 233); 
+  z-index: 0;
+  }
+  .feynman__img{
+    background-image: url(../images/feynman.png);
+    width:867px;
+    height: 637px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin:0;
+    bottom:0;
+    left:0;
+  }
+  
+  .feynman__content{ 
+    margin: 0 auto;
+    width: 100vw;
+    position:relative;
+    padding:100px 0;
+  }
+
+  .feynman__link{
+    position: absolute;
+    Right:48px;
+    top:50%;
+  }
+  .link_font-style{
+    line-height: 51px;
+    font-size:36px;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  /*I FINISHED WITH FEYNMAN. YOU CAN CALL THE CLEANING TEAM *WINK* *WINK*/
+  .cell__space-after{
+    margin-bottom: 20px;
+  }
+  
+  .kaufman{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto ;
+    padding: 80px 0 0;
+    align-items: center;
+  }
+  /*due to the fackt, that backgroundcolor wasn't given, i did choose the one i feel is the most simiral */
+  .kuafman__background-color_dark{
+    background-color: rgb(29, 25, 25);
+  }
+  /* in content we have everything: title, sublitle, table. */
+  .kaufman__content{
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .kaufman__triangle{
+    width: 877px;
+    height: 877px;
+    background-image: url(../images/kaufman-triangle.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding:0;
+  }
+  .kaufman__triangle_position{
+    position: absolute;
+    right:0;
+    top: 0;
+  }
+
+  .section-title_theme_dark{
+    width:60%;
+    align-self: center;
+  }
+
+  .section-title_font-style{
+    font-size:50px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: rgb(218, 218, 218);
+  }
+
+  .section-subtitle_theme_dark{
+    width:60%;
+    align-self: center;
+  }
+
+     /*same as with background*/
+  .section-subtitle_font-style{
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    color: rgb(218, 218, 218);
+    
+  }
+  /*size of a table block is stable, may be fixed thought*/
+  .table_flex{
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .table_theme_dark{
+    margin:0 0 80px;
+    height: 300px;
+    width: 1000px;
+    height: 80vh;
+    height: fit-content;
+  }
+
+  .table__cell_theme_dark{
+    width:200px;
+    margin:80px 0 0;  
+    height: fit-content;
+  }
+
+  .table__heading_theme_dark{
+    list-style-type: none;
+    text-align: left;
+    }
+
+  .table__heading_font-style{
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.15;
+  }
+
+  .table__text_theme_dark{
+  
+    text-align: left;
+    list-style-type: none;
+  }
+
+  .table__text_font-style{
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+/*IT'S ALMOST DONE, PAL. JUST ONE IT'S ONLY FOOTER LEFT TO NAIL IT TO THE GROUND*/
+
+.footer{
+  background-color: rgb(29, 25, 25);
+  min-width: 350px;
+  z-index:1;
+  padding:100px 0 40px;
+  margin:0;
+}
+.footer__column{
+  margin: 0 auto;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  height: 30vh;
+  justify-content: space-between;
+  z-index: 2;
+}
+.footer__content_copyright{
+  display:flex;
+  flex-basis:711px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo__place_footer{
+    width: 183px;
+    height: 32px;
+    background-image: url(../images/logo_place_footer.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer__author{
+  margin:18px 0;
+}
+.footer__content-info{
+  display:block;
+  height:100%;
+}
+.footer__column-heading{
+  display:block;
+  margin:0 0 20px;
+}
+.footer__heading-links{
+  display:flex;
+  flex-direction: column;
+  margin: 0 0 16px;
+  margin:0;
+}
+
+.footer__column-links{
+  display:flex;
+  list-style-type: none;
+  margin:0;
+  align-items: center;
+}
+.footer__content_social{
+  display:flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.footer__column-links_font-style{
+  line-height: 30px;
+  font-size:18px;
+  font-weight: normal;
+  color:white;
+  text-decoration: none;
+}
+.footer__author_font-style{
+line-height: 25px;
+font-size:18px;
+font-weight: normal;
+color:white;
+}
+.footer__column-heading_font-style{
+line-height: 30px;
+font-size:18px;
+font-weight: bold;
+color:white;
+}
+.footer__socials-icon{
+border:none;
+margin-right: 10px;
 }
