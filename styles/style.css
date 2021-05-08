@@ -1,3 +1,4 @@
+/*hello good Sir*/
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -97,7 +98,6 @@ background-position: center;
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
   margin-right: 0;
   margin-top: 80px;
 }
@@ -138,10 +138,10 @@ margin:0 auto;
 .main-text_paragraph_font-style{
  line-height: 34px;
  font-size: 24px;
- font-style: bold;
+ font-style: normal;
 }
 
-.two-column__brief{
+.two-column__brief_font-style{
   line-height: 1.2;
   font-size:24px;
   color: rgb(115, 154, 228);
@@ -175,18 +175,14 @@ font-size: 24px;
 /*size of a table block is stable, may be fixed thought*/
 .digits__table{
   margin:0 0 100px;
-  height: 300px;
+
   width: 1000px;
   height: 80vh;
   height: fit-content;
 }
-.table_flex{
-  display:flex;
-  flex-wrap: wrap;
-}
 .table__cell{
   width:250px;
-  margin:60px 0 0;  
+  margin:60px 0 0;
   height: fit-content;
 }
 .table__cell_heading{
@@ -208,15 +204,11 @@ line-height: 1.15;
   font-weight: normal;
 }
 
-.cell__space-after{
-  margin-bottom: 20px;
-}
-
 /*DIGEST ARE FINISHED YOU CAN FEEL FREE TO KEEP GOING*/
 
 .content__title{
   margin: 0 auto;
-  text-align: center; 
+  text-align: center;
   width:648px;
   list-style: none;
   z-index: 1;
@@ -241,7 +233,7 @@ font-weight: bold;
   position: relative;
   height: 100vh;
   margin:0;
-  background-color: rgb(233, 233, 233); 
+  background-color: rgb(233, 233, 233);
   z-index: 0;
   }
   .feynman__img{
@@ -265,7 +257,7 @@ font-weight: bold;
 
   .feynman__link{
     position: absolute;
-    Right:48px;
+    right:48px;
     top:50%;
   }
   .link_font-style{
@@ -349,15 +341,8 @@ font-weight: bold;
 
   .table_theme_dark{
     margin:0 0 80px;
-    height: 300px;
     width: 1000px;
     height: 80vh;
-    height: fit-content;
-  }
-
-  .table__cell_theme_dark{
-    width:200px;
-    margin:80px 0 0;  
     height: fit-content;
   }
 
@@ -381,7 +366,6 @@ font-weight: bold;
 
   .table__text_font-style{
     color: rgb(218, 218, 218);
-    font-weight: bold;
     font-size: 18px;
     line-height: 1.2;
     font-weight: normal;
