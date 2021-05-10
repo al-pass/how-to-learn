@@ -27,7 +27,7 @@
 /*Левую часть шапки сайта будем считать флекс колонкой с растоянием между блоками*/
 .header__title{
   position: absolute;
-  left:65px; 
+  left:65px;
   bottom:30%;
   max-width: 730px;
   width:100%;
@@ -143,9 +143,9 @@
 /*DESCRIPTION PART IN DONE FOR. KEEP GOING, IT'S NOTHING TO LOOK AT*/
 /*the whole section of digits is centered, so let's do it in digits*/
 .digits{
-  display: flex; 
-  flex-direction: column; 
-  margin: 100px auto 0; 
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto 0;
   align-items: center;
 }
 
@@ -170,12 +170,11 @@
 /*margin-bottom is 40 becouse margin in tabe + margin in cell = 100*/
 .table{ 
   justify-content: space-between;
-  margin:0;
   display:flex;
-  margin:0 0 40px; 
-  width: 1100px; 
-  height: 80vh; 
-  height: fit-content; 
+  margin:0 0 40px;
+  width: 1100px;
+  height: 80vh;
+  height: fit-content;
   flex-wrap: wrap;
 }
 .table__cell{
@@ -205,7 +204,6 @@
 .feynman{
   position: relative;
   height: 100vh;
-  margin:0;
   background-color: rgb(233, 233, 233);
   z-index: 0;
   margin: 0 auto;
@@ -257,15 +255,15 @@
 
   /*I FINISHED WITH FEYNMAN. YOU CAN CALL THE CLEANING TEAM *WINK* *WINK*/
 .kaufman{
-  z-index:1; 
-  display: flex; 
-  flex-direction: column; 
-  text-align: center; 
+  z-index:1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   position: relative;
   margin: 0 auto;
   padding: 80px 0 0;
   align-items: center;
-  background-color: rgb(29, 25, 25)
+  background-color: rgb(29, 25, 25);
 }
 
 .kaufman__triangle{
