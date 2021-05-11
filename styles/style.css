@@ -14,9 +14,7 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-  align-items: left;
   margin:0;
-  display:flex;
   min-height: 600px;
   max-height: 756px;
   height: 100vh;
@@ -77,7 +75,6 @@
 /* insted of margin header left column in blocks, we'll make padding inside left column to make needed space for content inside it*/
 .logo{
   width: 183px;
-  
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -204,7 +201,7 @@
 /*DIGEST ARE FINISHED YOU CAN FEEL FREE TO KEEP GOING*/
 .feynman{
   position: relative;
-  min-height: 890px;  
+  min-height: 890px;
   background-color:  #f2f2f2;
   z-index: 0;
   margin:100px auto 0;
@@ -266,6 +263,7 @@
   padding: 90px 0;
   align-items: center;
   background-color:#1f1f1f;
+  overflow: hidden;
 }
 
 .kaufman__triangle{
@@ -278,7 +276,6 @@
   padding:0;
   position: absolute;
   right:-240px;
-  overflow:hidden;
   top: 0;
   z-index: -1;
 }
