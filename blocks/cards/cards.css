@@ -1,4 +1,5 @@
 .cards{
+  width:920px;
   flex-wrap: wrap;
   margin: 0 auto;
   display:flex;
