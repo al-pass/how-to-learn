@@ -4,6 +4,6 @@
   height: 316px;
   border:none;
 }
-.video__iframelast-of-type{
+.video__iframe:last-of-type{
   margin: 0;
 }
